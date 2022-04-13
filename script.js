@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',  function (){
         document.getElementById('rating').innerHTML = `Rating : ${respData.items[3].volumeInfo.averageRating}`
         document.getElementById('thumbnail').src = `${respData.items[0].volumeInfo.imageLinks.thumbnail}`
     }
-    const link = document.getElementById('link').href = `${respData.items[0].volumeInfo.previewLink}`
+    const link = document.getElementById('link').href = `<a href="${respData.items[0].volumeInfo.previewLink}" id="link">Link to Preview</a>`
     const language = document.getElementById('language').innerHTML = `Language : ${respData.items[1].volumeInfo.language}`
     const publishDate = document.getElementById('publishDate').innerHTML = `Publish Date : ${respData.items[0].volumeInfo.publishedDate}`
     }})
